@@ -1,0 +1,129 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="utf-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="description" content=""> 
+    <meta name="author" content=""> 
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico"> 
+ 
+    <title>Dashboard Template for Bootstrap</title> 
+ 
+    <!-- Bootstrap core CSS --> 
+    <link href="css/bootstrap.min.css" rel="stylesheet"> 
+ 
+    <!-- Custom styles for this template --> 
+    <link href="aa.css" rel="stylesheet"> 
+ 
+    <!-- Just for debugging purposes. Don't actually copy this line! --> 
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]--> 
+ 
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> 
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]--> 
+  </head> 
+ 
+  <body> 
+   <style>
+	body{
+		background-color : grey;
+		}
+  </style>
+ 
+ 
+    <div class="container-fluid"> 
+      <div class="row"> 
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> 
+          <center><h1 class="page-header">WELCOME TO MY BLOG (^.^)</h1></center>  
+		  <br>
+		  <br>
+		  <br> 
+		<div> 
+			<h1>
+			LETS GO !!! <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+			  Klik Disini!
+			</button>
+			</h1> 
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4>APA YANG INGIN ANDA LAKUKAN ???</h4>
+				  </div>
+				  <?php 
+require 'koneksi.php';
+  $tampil = query ("SELECT * FROM blog");
+
+ ?>
+ <!DOCTYPE html>
+<html>
+<head>
+
+  <title>MY BLOG</title>
+</head>
+
+<body>
+   
+   <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+  <header>
+  <nav>
+    <ul>
+      <li><a href="register.php">Menambah Tampilan Blog ?</a></li>
+      <li><a href="log.php">Membaca Blog ?</a></li>
+    </ul>
+  </nav>
+  
+  
+  <?php if(isset($_GET['status'])): ?>
+  <p>
+    <?php
+      if($_GET['status'] == 'sukses'){
+        echo "Pendaftaran  berhasil!";
+      } else {
+        echo "Pendaftaran gagal!";
+      }
+    ?>
+  </p>
+  <?php endif; ?>
+  
+  
+
+      </body>
+</html>
+				</div>
+			  </div>
+			</div>
+         
+          </div> 
+	
+ 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+         
+          </div> 
+ 
+ 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== --> 
+    <!-- Placed at the end of the document so the pages load faster --> 
+    <script src="jquery.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="../../assets/js/docs.min.js"></script> 
+  </body> 
+</html> 
